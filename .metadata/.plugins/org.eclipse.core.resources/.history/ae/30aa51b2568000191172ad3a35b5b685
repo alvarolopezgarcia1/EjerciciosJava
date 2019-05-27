@@ -1,0 +1,48 @@
+package ej4;
+
+import java.util.*;
+
+public class Supermercado {
+
+	public static void main(String[] args) {
+		
+		
+	
+	
+		HashMap<String, Double> Producto = new HashMap<String, Double>(); 
+		Producto.put("avena",2.21); 
+		Producto.put("garbanzos", 2.39); 
+		Producto.put("Tomate", 1.59); 
+		Producto.put("Jengibre", 3.13 ); 
+		Producto.put("Quinoa", 4.50 ); 
+		Producto.put("Guisantes", 1.6 );
+		
+		String opcion = "fin";
+		
+		do {
+			System.out.println("\n\nLista de espera consulta médica:");
+			System.out.println("1.- Indique el nombre del producto");
+			System.out.println("2.- Introduce fin para terminar.");
+			System.out.print("--> Indique opción: ");
+
+			opcion = s
+
+			switch (opcion) {
+			case 1:
+				PonerseEnLista(miLista);
+				break;
+			case 2:
+				LeTocaLista(miLista);
+				break;
+			case 3:
+				ListarLaLista(miLista);
+				break;
+			default:
+			}
+
+		} while (opcion != 3);
+	}
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ejercicio3Piramide.java&apos; to &apos;ej3Piramide.java&apos;&#x0D;&#x0A;- Original project: &apos;Examen1&apos;&#x0D;&#x0A;- Original element: &apos;ejercicio3Piramide.java&apos;&#x0D;&#x0A;- Renamed element: &apos;ej3Piramide.java&apos;" description="Rename compilation unit &apos;ejercicio3Piramide.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{ejercicio3Piramide.java" name="ej3Piramide.java" references="false" stamp="1558458292198" version="1.0"/>
+</session>

@@ -1,0 +1,46 @@
+package Baloncesto;
+
+public class baloncesto1 {
+
+	private String equipo;
+
+	private String ciudad;
+
+	private int puntuacion;
+
+	private int posicion;
+
+	private String jugadorFranquicia;
+
+	public baloncesto1(String equipo, String ciudad, int puntuacion, int posicion, String jugadorFranquicia) {
+		this.equipo = equipo;
+		this.ciudad = ciudad;
+		this.puntuacion = puntuacion;
+		this.posicion = posicion;
+		this.jugadorFranquicia = jugadorFranquicia;
+	}
+
+	public baloncesto1() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "baloncesto1 [equipo=" + equipo + ", ciudad=" + ciudad + ", puntuacion=" + puntuacion + ", posicion="
+				+ posicion + ", jugadorFranquicia=" + jugadorFranquicia + "]";
+	}
+
+	public int puntosParaAcabar(int a) {
+
+		int puntosAcabar;
+
+		puntosAcabar = 38;
+
+		int acabado = puntosAcabar - a;
+
+		return acabado;
+
+	}
+
+}

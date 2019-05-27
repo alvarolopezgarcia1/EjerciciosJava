@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class PruebaContadorPalabras {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//cuenta el numero de palabras
+		String text = "lorem impsum\narmet amet, hello world";
+		System.out.println(text.split("\\s+|\n").length);
+
+	}
+
+}

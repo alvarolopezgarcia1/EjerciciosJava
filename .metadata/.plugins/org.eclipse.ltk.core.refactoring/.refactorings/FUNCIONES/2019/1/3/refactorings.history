@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FUNCIONES/src/PruebaFunciones2.java&apos; to &apos;cuentaVocales.java&apos;" description="Rename resource &apos;PruebaFunciones2.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/PruebaFunciones2.java" name="cuentaVocales.java" stamp="1547578910489" updateReferences="true"/>
+</session>

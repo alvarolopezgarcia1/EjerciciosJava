@@ -1,0 +1,30 @@
+
+public class contar {
+
+	public static void main(String[] args) {
+
+		int numero = 1427777;
+
+		int contador = 0;
+
+		int[] copia = new int[10];
+
+		for (int i = 0; i <copia.length; i++) {
+			int unidades = numero % 10;
+			numero = numero / 10;
+			if (unidades >= 0) {
+				copia[i] = unidades;
+				
+				if(copia[i]==7) {
+					contador++;
+				}
+
+			}
+
+			System.out.print(copia[i] + " ");
+		}
+		
+		System.out.println(" El 7 se repite " + contador + " veces");kjkj
+
+	}
+}

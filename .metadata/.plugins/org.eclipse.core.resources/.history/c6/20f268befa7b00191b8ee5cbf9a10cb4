@@ -1,0 +1,8 @@
+
+public class pruebachar {
+	public static void main(String[] args) {
+
+		Integer numero = new Integer(23);
+		System.out.println(numero.toString());
+	}
+}

@@ -1,0 +1,98 @@
+
+import java.util.*;
+
+public class uso_empleado {
+
+	public static void main(String[] args) {
+
+		/*
+		 * empleado Pepe = new empleado("Pepe", 1500, 2018, 12, 12);
+		 * 
+		 * empleado Maria = new empleado("Maria", 1200, 2016, 11, 1);
+		 * 
+		 * empleado Lourdes = new empleado("Lourdes", 1100, 2019, 1, 12);
+		 * 
+		 * Pepe.subeSueldo(10);
+		 * 
+		 * Maria.subeSueldo(5);
+		 * 
+		 * Lourdes.subeSueldo(15);
+		 * 
+		 * System.out.println("Nombre: " + Pepe.dameNombre() + "Sueldo: " +
+		 * Pepe.dameSueldo() + "Fecha de alta: " + Pepe.dameFechaContrato());
+		 * System.out.println("Nombre: " + Maria.dameNombre() + "Sueldo: " +
+		 * Maria.dameSueldo() + "Fecha de alta: " + Maria.dameFechaContrato());
+		 * System.out.println("Nombre: " + Lourdes.dameNombre() + "Sueldo: " +
+		 * Lourdes.dameSueldo() + "Fecha de alta: " + Lourdes.dameFechaContrato());
+		 */
+
+		// Codigo alternativo con array
+
+		empleado[] misEmpleados = new empleado[4];
+
+		misEmpleados[0] = new empleado("Paco", 12500, 1990, 12, 17);
+		misEmpleados[1] = new empleado("Maria", 18500, 1997, 10, 13);
+		misEmpleados[2] = new empleado("Lourdes", 13500, 1991, 8, 16);
+		misEmpleados[3] = new empleado("lolo");
+
+		for (int i = 0; i < misEmpleados.length; i++) {
+
+			misEmpleados[i].subeSueldo(5);
+		}
+
+		for (int i = 0; i < misEmpleados.length; i++) {
+
+			System.out.println("Nombre: " + misEmpleados[i].dameNombre() + " Sueldo: " + misEmpleados[i].dameSueldo()
+					+ " Fecha: " + misEmpleados[i].dameFechaContrato());
+		}
+
+	}
+
+}
+
+class empleado {
+
+	public empleado(String nom, double sue, int anio, int mes, int dia) {
+
+		this.nombre = nom;
+		this.sueldo = sue;
+		GregorianCalendar calendario = new GregorianCalendar(anio, mes - 1, dia);
+		altaContrato = calendario.getTime();
+	}
+
+	public empleado(String nom) {
+
+		this(nom, 30000, 2000, 01, 0); // así le damos valores por defecto sin tener que introducirlos a los empleadosb
+
+	}
+
+	public String dameNombre() { // getter
+
+		return nombre;
+	}
+
+	public double dameSueldo() { // getter
+		return sueldo;
+
+	}
+
+	public Date dameFechaContrato() { // getter
+
+		return altaContrato;
+	}
+
+	public void subeSueldo(double porcentaje) { // setter
+
+		double aumento = sueldo * porcentaje / 100;
+
+		sueldo += aumento;
+
+	}
+
+	private String nombre;
+
+	private double sueldo;
+
+	private Date altaContrato;
+
+}

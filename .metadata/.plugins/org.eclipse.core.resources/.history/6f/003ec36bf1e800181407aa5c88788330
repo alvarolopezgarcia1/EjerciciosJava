@@ -1,0 +1,42 @@
+//Ejercicio 8 
+//Realiza un programa que pida la temperatura media que ha hecho en cada mes 
+//de un determinado año y que muestre a continuación un diagrama de barras
+//horizontales con esos datos. Las barras del diagrama se pueden dibujar a base 
+//de asteriscos o cualquier otro carácter.
+
+
+package prueba;
+
+import java.util.Scanner;
+
+
+public class ejercicio8Tema7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner s = new Scanner(System.in);
+
+		int i;
+		
+		int num[] = new int[12];
+		
+		System.out.println("Introduce la temperatura media de todos los meses de un año" );
+		
+		for(i=0; i<12; i++) {
+			
+			num[i] = s.nextInt();
+			
+			
+			
+			
+		}
+		int tiempo =num[i];
+		System.out.println(tiempo);
+		
+
+	}
+
+}
+
+

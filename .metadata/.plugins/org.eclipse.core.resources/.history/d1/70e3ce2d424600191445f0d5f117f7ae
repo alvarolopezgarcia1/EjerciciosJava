@@ -1,0 +1,13 @@
+package Baloncesto;
+
+public class mainBaloncesto extends baloncesto1 {
+
+	public static void main(String[] args) {
+
+		baloncesto1 eq1 = new baloncesto1("Unicaja", "Malaga", 25, 4, "Carlos Cabezas");
+
+		System.out.println(eq1);
+
+	}
+
+}

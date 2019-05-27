@@ -1,0 +1,45 @@
+//Ejercicio 14 
+//Escribe un programa que pida 8 palabras y las almacene en un array. A 
+//continuación, las palabras correspondientes a colores se deben almacenar al 
+//comienzo y las que no son colores a continuación. Puedes utilizar tantos arrays 
+//auxiliares como quieras. Los colores que conoce el programa deben estar en 
+//otro array y son los siguientes: verde, rojo, azul, amarillo, naranja, rosa, negro, 
+//blanco y morado.
+//Ejemplo:
+
+package prueba;
+
+import java.util.Scanner;
+
+public class ejercicio14Tema7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner s = new Scanner(System.in);
+		
+		int i;
+		int n;
+		String[] palabra = new String[8];
+		String[] colores = new String [8];
+		String[] auxiliar = new String [8];
+		
+		
+		System.out.print("Introduce 8 palabras por teclado");
+		
+		for(i=0; i<8; i++) {
+			
+		palabra[i] = s.nextLine();
+		
+
+		}
+		for(i=0; i<8; i++) {
+			
+		System.out.print(palabra[i]);
+		
+
+		}
+		
+	}
+
+}

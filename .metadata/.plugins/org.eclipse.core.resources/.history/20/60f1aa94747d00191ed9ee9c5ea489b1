@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class ejercicioBilletes {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+
+		System.out.println("Introduzca una cantidad");
+
+		double cantidad = s.nextDouble();
+
+		int contador500 = 0;
+		int contador200 = 0;
+		int contador100= 0;
+
+		if (cantidad > 500) {
+
+			contador500 = (int) (cantidad / 500);
+			System.out.println(contador500 + " de 500€");
+		}
+			
+		if (cantidad - (contador500*500) > 200) {
+
+				contador200 = (int) ((cantidad -contador500*500) / 200) ;
+				System.out.println(contador200 + " de 200€");
+				
+			
+		if (cantidad - (contador500+contador200*200) > 100) {
+
+				contador100 = (int) ((cantidad -(contador500-contador200*200)) / 100) ;
+					System.out.println(contador100 + " de 100€");
+
+			}
+
+		}
+
+	}
+
+}

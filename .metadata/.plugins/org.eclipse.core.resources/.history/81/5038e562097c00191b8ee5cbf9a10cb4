@@ -1,0 +1,30 @@
+
+public class contar {
+
+	public static void main(String[] args) {
+        
+		int numero=14236587;
+		
+		int contador= 0;
+
+		int[] copia = new int[10];
+
+		boolean repetido = false;
+
+		for (int i = 0; i < numero; i++) {
+			
+			int aux = numero % 10;
+			
+			if (copia[i]==aux) {
+		    repetido=true;
+			contador++;
+
+			}
+			
+			System.out.println("El numero " + aux + " está " + contador + " veces");
+			
+
+		}
+
+	}
+}

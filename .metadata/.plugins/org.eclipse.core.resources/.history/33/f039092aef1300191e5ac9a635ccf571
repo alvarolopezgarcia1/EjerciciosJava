@@ -1,0 +1,34 @@
+package prueba;
+
+import java.util.Arrays;
+
+public class ordenarArray {
+
+	public static void main(String[] args) {
+
+// Array a ordenar:
+		int[] intArray = { 3, 2, 8, 5, 7, 9 };
+// Método "sort" para ordenar el array
+		Arrays.sort(intArray);
+
+		for (int i : intArray) {
+
+			System.out.print(i);
+		}
+		
+		
+	       //Array de String
+        String[] nombres = {"Pepe", "Juan", "Alex",
+            "Julian", "Francisco", "Luis"};
+
+        //Ordena el array
+        Arrays.sort(nombres);
+
+        //Mostramos el array ya ordenado
+        for (String i : nombres) {
+            System.out.print(i + ", ");
+        }
+		
+
+	}
+}

@@ -1,0 +1,36 @@
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class MemoriaPalabras {
+  private String nombre;
+  private ArrayList<String> memoria;
+  
+  public MemoriaPalabras (String name) {
+    this.nombre = name;
+    this.memoria = new ArrayList<String>();
+  }
+  
+  public void memorizar (String word) {
+    this.memoria.add(word);
+  }
+  
+  public void invertir () {
+    Collections.reverse(memoria);
+  }
+  
+  public String toString () {
+    String resultado = "";
+    int i=0;
+    for (String s: this.memoria) {
+      i++;
+      resultado += s;             
+      if (i<this.memoria.size()) {
+        resultado +=", ";
+      } else {
+        resultado +=".\n";
+      }
+    }
+    return resultado;
+  }
+}

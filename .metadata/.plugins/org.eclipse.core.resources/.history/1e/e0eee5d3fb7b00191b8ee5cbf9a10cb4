@@ -1,0 +1,16 @@
+public class pruebachar {
+	public static void main(String[] args) {
+		String cadena = "Automovil";
+		char letra1 = cadena.charAt(0);
+		char letra2 = cadena.charAt(2);
+		char letra3 = cadena.charAt(5);
+		
+		//Prueba de como hacer casting a un char para tener su codigo ascii
+		System.out.println((int)letra1);
+		System.out.println(letra2);
+		System.out.println(letra3);
+		
+		
+		Integer.parseInt(cadena.substring(3,4));
+	}
+}

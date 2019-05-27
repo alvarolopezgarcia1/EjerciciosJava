@@ -1,0 +1,73 @@
+package ej3;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class UsoLista {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		
+		ArrayList<Persona> miLista = new ArrayList<Persona>();
+
+		int opcion = 0;
+
+		do {
+			System.out.println("\n\nLista de espera consulta médica:");
+			System.out.println("1.- ¿Cúal es el nombre del paciente recien llegado?");
+			System.out.println("2.- ¿A quién le toca?.");
+			System.out.println("3.- Salir.");
+			System.out.print("--> Indique opción: ");
+
+			opcion = s.nextInt();
+
+			switch (opcion) {
+			case 1:
+				PonerseEnLista(miLista);
+				break;
+			case 2:
+				LeTocaLista(miLista);
+				break;
+			case 3:
+				ListarLaLista(miLista);
+				break;
+			default:
+			}
+
+		} while (opcion != 3);
+	}
+
+	public static void PonerseEnLista(ArrayList<Persona> miLista) {
+		
+		Scanner s = new Scanner(System.in);
+	
+		System.out.print("Indique el nombre de esta persona: ");
+		String nombre = s.nextLine();
+
+		Persona personaAuxiliar = new Persona(nombre);
+
+		miLista.add(personaAuxiliar);
+
+	}
+
+	public static void LeTocaLista(ArrayList<Persona> miLista) {
+		if (miLista.size() > 0) {
+			Persona perAux = miLista.get(0);
+			System.out.println("Le toca a:");
+			System.out.println(perAux);
+			miLista.remove(0);
+		} else {
+			System.out.println("La cola está vacía.");
+		}
+	}
+
+	public static void ListarLaLista(ArrayList<Persona> miLista) {
+		int i = 1;
+		System.out.println("");
+		System.out.println("Pacientes que quedan en la cola");
+	    for (Persona p : miLista) {
+			System.out.println(i + ". " + p);
+			i++;
+		}
+	}
+}

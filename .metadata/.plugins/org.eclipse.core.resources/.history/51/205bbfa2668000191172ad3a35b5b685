@@ -1,0 +1,34 @@
+package ej2;
+
+public class Urna {
+
+	private String blancas = "blancas";
+	private String negras = "negra";
+
+	public Urna(String blancas, String negras) {
+		this.blancas = blancas;
+		this.negras = negras;
+	}
+
+	public String getBlancas() {
+		return blancas;
+	}
+
+	public void setBlancas(String blancas) {
+		this.blancas = blancas;
+	}
+
+	public String getNegras() {
+		return negras;
+	}
+
+	public void setNegras(String negras) {
+		this.negras = negras;
+	}
+
+	public void MeteBola(int numeroDeBolas) {
+		this.blancas += numeroDeBolas;
+		this.blancas += numeroDeBolas;
+	}
+
+}

@@ -1,0 +1,36 @@
+/*Cree las funciones cuyas cabeceras se muestran a continuación, observe que tienen el mismo nombre:
+public static int ocurrencias(int digito, int n) 
+public static int ocurrencias(int digito, int[] a)
+La función ocurrencias devuelve el número de veces que aparece un dígito dentro de un número (primera
+función) o bien el número de veces que aparece un dígito en una serie de números contenidos en un array 
+(segunda función). Se valorará especialmente la reutilización y uso óptimo del código.*/
+
+public class ej2 {
+
+	public static void main(String[] args) {
+
+		System.out.println(ocurrencias(1, 1111333));
+
+	}
+
+	public static int ocurrencias(int digito, int n) {
+
+		int contador = 0;
+		int[] copia = new int[10];
+
+		for (int i = 0; i < copia.length; i++) {
+			int unidades = n % 10;
+			n = n / 10;
+			if (unidades >= 0) {
+				copia[i] = unidades;
+				
+				if(copia[i]==n) {
+					contador++;
+				}
+
+			}
+
+		return contador;
+	}
+
+}

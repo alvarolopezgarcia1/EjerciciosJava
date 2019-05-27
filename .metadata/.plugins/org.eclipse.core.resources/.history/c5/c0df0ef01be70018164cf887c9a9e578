@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+
+
+public abstract class ejercicio8Tema5Extra {
+	
+	public static void main (String []args) {
+		
+		Scanner s = new Scanner(System.in);
+				
+				int num;
+				
+		        while (num>0) {
+					
+				System.out.println("Introduzca un numero entero por teclado y le diré cual es su cuadrado");
+				num = s.nextInt();
+				
+				int cuadrado= num*num;
+				
+				System.out.println("El cuadrado de "+ num+ "es "+ cuadrado);
+	            }
+			
+	        
+				
+		
+		
+	}
+
+}

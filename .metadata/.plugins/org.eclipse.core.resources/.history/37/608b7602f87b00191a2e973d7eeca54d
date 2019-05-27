@@ -1,0 +1,26 @@
+
+public class contarTamañoNumero {
+	
+	 public static void main(String[] args) {
+		 
+		 
+		 int numero= 45676;
+		 int contador=0;
+	     int[] n = new int[5];
+	     int aux;
+		 
+	   do {
+		
+		
+		 for(int i=0; i>numero; i++) {
+		 n[i]=numero/10;
+		 contador+=1;
+		 i++;
+		 }
+		
+		 }while(numero>0);
+	   
+	   System.out.println(contador);
+	 }
+
+}

@@ -1,0 +1,23 @@
+package prueba;
+
+public class pruebaChar {
+
+	public static void main(String[] args) {
+		int numero = 470213;
+		String composicion = "";
+		String numero2 = Integer.toString(numero);
+
+		char posicion = numero2.charAt(0);
+
+		switch (posicion) {
+		case '1':
+			composicion += "uno ,";
+		case '4':
+			composicion += "cuatro ,";
+		}
+
+		System.out.println("test " + composicion);
+
+	}
+
+}

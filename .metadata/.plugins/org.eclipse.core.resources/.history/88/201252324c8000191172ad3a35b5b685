@@ -1,0 +1,71 @@
+package ej3;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class UsoLista {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		
+		ArrayList<Persona> miCola = new ArrayList<Persona>();
+
+		int opcion = 0;
+
+		do {
+			System.out.println("\n\nLista de espera consulta médica:");
+			System.out.println("1.- LLegada de paciente a consulta.");
+			System.out.println("2.- Siguiente.");
+			System.out.println("3.- Salir.");
+			System.out.print("--> Indique opción: ");
+
+			opcion = s.nextInt();
+
+			switch (opcion) {
+			case 1:
+				PonerseEnCola(miCola);
+				break;
+			case 2:
+				AQuienLeToca(miCola);
+				break;
+			case 3:
+				ListarNombresEnCola(miCola);
+				break;
+			default:
+			}
+
+		} while (opcion != 3);
+	}
+
+	public static void PonerseEnCola(ArrayList<Persona> miCola) {
+		
+		Scanner s = new Scanner(System.in);
+	
+		System.out.print("Indique el nombre de esta persona: ");
+		String nombre = s.nextLine();
+
+		Persona perAux = new Persona(nombre);
+
+		miCola.add(perAux);
+
+	}
+
+	public static void AQuienLeToca(ArrayList<Persona> miCola) {
+		if (miCola.size() > 0) {
+			Persona perAux = miCola.get(0);
+			System.out.println("Le toca a:");
+			System.out.println(perAux);
+			miCola.remove(0);
+		} else {
+			System.out.println("La cola está vacía.");
+		}
+	}
+
+	public static void ListarNombresEnCola(ArrayList<Persona> miCola) {
+		int i = 1;
+		for (Persona p : miCola) {
+			System.out.println(i + " -- " + p);
+			i++;
+		}
+	}
+}

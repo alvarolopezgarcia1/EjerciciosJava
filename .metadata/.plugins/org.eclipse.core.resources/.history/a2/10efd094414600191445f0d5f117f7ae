@@ -1,0 +1,70 @@
+package Baloncesto;
+
+public class baloncesto1 {
+	
+	private String equipo;
+	
+	private String ciudad;
+	
+	private int puntuacion;
+	
+	private int posicion;
+	
+	private String jugadorFranquicia;
+
+	public baloncesto1(String equipo, String ciudad, int puntuacion, int posicion, String jugadorFranquicia) {
+		this.equipo = equipo;
+		this.ciudad = ciudad;
+		this.puntuacion = puntuacion;
+		this.posicion = posicion;
+		this.jugadorFranquicia = jugadorFranquicia;
+	}
+
+	public String getEquipo() {
+		return equipo;
+	}
+
+	public void setEquipo(String equipo) {
+		this.equipo = equipo;
+	}
+
+	public String getCiudad() {
+		return ciudad;
+	}
+
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
+	}
+
+	public int getPuntuacion() {
+		return puntuacion;
+	}
+
+	public void setPuntuacion(int puntuacion) {
+		this.puntuacion = puntuacion;
+	}
+
+	public int getPosicion() {
+		return posicion;
+	}
+
+	public void setPosicion(int posicion) {
+		this.posicion = posicion;
+	}
+
+	public String getJugadorFranquicia() {
+		return jugadorFranquicia;
+	}
+
+	public void setJugadorFranquicia(String jugadorFranquicia) {
+		this.jugadorFranquicia = jugadorFranquicia;
+	}
+
+	public baloncesto1() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

@@ -1,0 +1,11 @@
+
+public class pruebaModulo10 {
+	
+	public static void main (String[]args) {
+		
+		int numero= 450;
+		
+		System.out.println(numero%10);
+	}
+
+}

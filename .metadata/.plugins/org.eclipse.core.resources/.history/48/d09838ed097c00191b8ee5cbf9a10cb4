@@ -1,0 +1,23 @@
+
+public class contar {
+
+	public static void main(String[] args) {
+
+		int numero = 142;
+
+		int contador = 0;
+
+		int[] copia = new int[10];
+
+		boolean repetido = false;
+
+		for (int i = 0; i < numero; i++) {
+
+			copia[i] = numero % 10;
+			numero = numero / 10;
+
+			System.out.println(copia[i] + " ");
+		}
+
+	}
+}

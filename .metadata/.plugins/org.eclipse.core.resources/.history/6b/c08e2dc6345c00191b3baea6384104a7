@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Ejercicio4 {
+
+	public static void main(String[] args) {
+
+		int[][] tablero = new int[9][9];
+
+		Scanner s = new Scanner(System.in);
+
+		System.out.println("Introduzca 9 lineas de 9 dígitos");
+
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+
+				tablero[i][j] = s.nextInt();
+			}
+
+		}
+
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+
+				System.out.print(tablero[i][j]);
+
+			}
+
+			System.out.println();
+
+		}
+
+	}
+}

@@ -1,0 +1,28 @@
+import javax.swing.*;
+
+public class uso_Coche {
+
+	public static void main(String[] args) {
+
+		Coche Seat = new Coche();
+
+		Seat.establece_color(JOptionPane.showInputDialog("Introduce color"));
+
+		System.out.println(Seat.dime_color());
+
+		System.out.println(Seat.dime_todo());
+
+		Seat.configura_asientos(JOptionPane.showInputDialog("¿tiene asientos de cuero?"));
+
+		System.out.println(Seat.dime_asientos());
+
+		Seat.configura_climatizador(JOptionPane.showInputDialog("¿tiene climatizador?"));
+
+		System.out.println(Seat.dime_climatizador());
+
+		System.out.println(Seat.dime_peso_coche());
+
+		System.out.println("El precio final del coche es " + Seat.precio_coche());
+	}
+
+}

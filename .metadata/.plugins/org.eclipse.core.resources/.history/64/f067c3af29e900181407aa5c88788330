@@ -1,0 +1,42 @@
+//Ejercicio 9
+//Realiza un programa que pida 8 números enteros y que luego muestre esos números junto con la palabra “par” o “impar” según proceda.
+
+package prueba;
+
+import java.util.Scanner;
+
+public class ejercicio9Tema7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner s = new Scanner(System.in);
+
+		int num[] = new int[8];
+
+		int i;
+
+		int par;
+
+		int impar;
+
+		System.out.println("Por favor introduzca 8 numeros enteros y le diré si son par o impar");
+
+		for (i = 0; i < 8; i++) {
+
+			num[i] = s.nextInt();
+
+			if (num[i] % 2 == 0) {
+
+			
+				System.out.print( " es par")
+			}
+
+			if (num[i] % 2 != 0) {
+
+				System.out.print( " es impar");
+
+			}
+		}
+		}
+	}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;prueba.fibonacci.main().S&apos; in &apos;prueba.fibonacci.main()&apos; to field&#x0D;&#x0A;- Original project: &apos;prueba&apos;&#x0D;&#x0A;- Original element: &apos;prueba.fibonacci.main().S&apos;&#x0D;&#x0A;- Field name: &apos;s&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;S&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;prueba{fibonacci.java" name="s" selection="271 26" stamp="1544600288680" static="true" version="1.0" visibility="2"/>
+</session>

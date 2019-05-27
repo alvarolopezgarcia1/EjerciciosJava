@@ -1,0 +1,15 @@
+/*Cree las funciones cuyas cabeceras se muestran a continuación, observe que tienen el mismo nombre:
+public static int ocurrencias(int digito, int n) 
+public static int ocurrencias(int digito, int[] a)
+La función ocurrencias devuelve el número de veces que aparece un dígito dentro de un número (primera
+función) o bien el número de veces que aparece un dígito en una serie de números contenidos en un array 
+(segunda función). Se valorará especialmente la reutilización y uso óptimo del código.*/
+
+public class ej {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

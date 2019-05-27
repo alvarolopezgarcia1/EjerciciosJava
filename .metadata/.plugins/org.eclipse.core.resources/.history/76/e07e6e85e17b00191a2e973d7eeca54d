@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class PruebaContadorPalabras {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String text = "lorem impsum\narmet amet, hello world";
+		System.out.println(text.length);
+
+	}
+
+}

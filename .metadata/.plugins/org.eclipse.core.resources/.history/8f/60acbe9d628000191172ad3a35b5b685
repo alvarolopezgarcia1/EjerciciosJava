@@ -1,0 +1,16 @@
+package ej2;
+
+public class Urna {
+	
+	 private String blancas= "blancas";
+	 private String negras= "negra";
+	 
+	 
+	 public Urna (String blancas, String negras) {
+		    this.blancas = blancas;
+		    this.negras = negras;   
+		  }
+		  
+	 
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ARRAY/src/ej3.java&apos; to &apos;ej2.java&apos;" description="Rename resource &apos;ej3.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ej3.java" name="ej2.java" stamp="1547645605719" updateReferences="true"/>
+</session>

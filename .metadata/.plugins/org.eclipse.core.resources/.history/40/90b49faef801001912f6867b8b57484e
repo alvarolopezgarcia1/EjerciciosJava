@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+
+public class ejer3Exam {
+
+	public static void main(String[] args) {
+
+		Scanner r = new Scanner(System.in);
+		String asterisco = "";
+		int contador[] = new int[100];
+		for (int i = 0; i < 100; i++) {
+			contador[i] = 0;
+		}
+		int num;
+		do {
+			num = r.nextInt();
+			if (num != -1) {
+				contador[num - 1]++;
+			}
+		} while (num != -1);
+		int j;
+		int h;
+		for (h = 0; h < 100; h++) {
+			if ((contador[h]) != 0) {
+				System.out.print("Número " + (h + 1) + ": ");
+				for (j = contador[h]; j > 0; j--) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		}
+
+	}
+
+}

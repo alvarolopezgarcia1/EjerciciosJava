@@ -1,0 +1,62 @@
+/*2 puntos] Escriba un programa que solicite al usuario números enteros comprendidos entre los valores 1 y 100, 
+y que genere un histograma con las frecuencias de cada número entero introducido. Si el valor introducido
+está fuera del rango [1,100], se informará al usuario que el valor no es válido y será ignorado, volviéndosele a 
+solicitar un nuevo valor, salvo en el caso del valor -1, que servirá para finalizar la captura de enteros.  Para 
+representar las barras del histograma utilice secuencias del carácter ‘*’. Por ejemplo, la secuencia: 1, 1, 20, 1, 
+2, 20, 3, 3, 3, 4, 4, 4, 33, 3, -1 generaría la siguiente salida:
+1: 
+2:
+3: 
+4:
+20: 
+33:
+*** 
+*
+**** 
+***
+** 
+*
+Si lo considera oportuno, utilice funciones para implementar este programa.*/
+
+package prueba;
+
+import java.util.Scanner;
+
+public class ejercicio4Examen {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+
+		int numeroIntroducido[] = new int[100];
+
+		int contador;
+
+		int numeroInt = 1;
+
+		do {
+			System.out.println(
+					"Por favor introduzca nueros enteros comprendidos entre el 1 y el 100, cuando quiera salir del programa pulse -1");
+
+			for (int i = 0; i < 101; i++) {
+				numeroInt = s.nextInt();
+				numeroInt = numeroIntroducido[numeroInt];
+
+				if (numeroInt == -1) {
+
+					System.out.println("Hasta luego");
+
+				}
+
+				System.out.println(numeroIntroducido[numeroInt++]);
+
+			}
+
+		} while ((numeroInt < 101) && (numeroInt > 0));
+
+		for (int i = 0; i < 101; i++)
+
+			System.out.println("Hasta luego");
+
+	}
+}

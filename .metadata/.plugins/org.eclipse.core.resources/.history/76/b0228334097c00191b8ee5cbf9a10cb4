@@ -1,0 +1,36 @@
+
+public class contar {
+
+	public static void main(String[] args) {
+
+		int numero=0;
+		int contador = 1;
+
+		for (int i = 0; i < numero; i++) {
+
+			numero = numero / 10;
+			if (numero > 0) {
+				contador++;
+			}
+
+		}
+
+		System.out.println("El numero tiene " + contador + " dígitos");
+
+		int[] copia = new int[10];
+
+		boolean repetido = false;
+
+		for (int i = 0; i < numero; i++) {
+			if (numero > 0) {
+				copia[i] = numero % 10;
+				if (numero > 0) {
+					contador++;
+				}
+
+			}
+
+		}
+
+	}
+}

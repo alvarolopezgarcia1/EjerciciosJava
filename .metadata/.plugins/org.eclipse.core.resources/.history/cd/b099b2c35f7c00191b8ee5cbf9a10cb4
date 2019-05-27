@@ -1,0 +1,25 @@
+
+public class contar {
+
+	public static void main(String[] args) {
+
+		int numero = 1425;
+
+		int contador = 0;
+
+		int[] copia = new int[10];
+
+		for (int i = 0; i < numero; i++) {
+			 int unidades = numero % 10 ;
+		        numero = numero / 10;
+			if (unidades >= 0) {
+				copia[i] = unidades;
+
+			}
+			numero = numero / 10;
+
+			System.out.print(copia[i] + " ");
+		}
+
+	}
+}
